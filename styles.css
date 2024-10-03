@@ -1,0 +1,575 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Logo and Title */
+nav img {
+    height: 500px;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    color: #9b1a1a;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Customer Reviews */
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.review p {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Nav */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 960px) {
+    /* Stack the logo and heading */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Adjust main content padding */
+    main {
+        padding: 15px;
+    }
+
+    /* Make reviews stack nicely */
+    .review {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Styling the product table as cards */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Adjust the card width to fit 5 items per row */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(20% - 20px);
+    max-width: 240px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 400px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+    flex-grow: 1;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.product-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-card a:hover {
+    background-color: #333;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 960px) {
+    .product-card {
+        flex-basis: calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 400px) {
+    .product-card {
+        flex-basis: 100%; 
+    }
+}
+
+
+
+
+/* Homepage text and heading styling */
+main h1, main h2, main p {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    padding: 15px;
+}
+
+h2 {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+/* Product Section Styling for Cards */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 240px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.product-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-card a:hover {
+    background-color: #333;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 960px) {
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* General page entrance animation */
+@keyframes pageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: pageFadeIn 1s ease-in-out;
+}
+
+/* Navigation link styles */
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e7eb14;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Underline effect */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #ff4c4c; 
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #ff4c4c; 
+}
+
+nav ul li a:hover::before {
+    width: 100%; 
+}
+
+/* Cool animation when clicking a link */
+nav ul li a:active {
+    animation: clickBounce 0.3s ease;
+}
+
+/* Click animation */
+@keyframes clickBounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Optional: Smooth transitions between pages */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Keyframes to animate the gradient */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* General layout for the page to ensure footer sticks to bottom */
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content wrapper */
+.content {
+    flex: 1; 
+}
+
+/* Footer */
+footer {
+    background-color: #000; 
+    color: #ff0000 !important;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    height: 50px;
+    position: fixed; 
+    bottom: 0;
+}
+
+footer p {
+    color: #ff0000 !important;
+    text-align: center;
+}
+
+/* News Container */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* News Card */
+.news-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-card h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.news-card p {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Hover effect for the news card */
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 960px) {
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* Apply this to the entire body or specific elements */
+body {
+    cursor: url('Images/Martin-Berube-Sport-Soccer.24.png'), auto; 
+}
+
+/* General page styling */
+body {
+    background-color: #e4dfdf; 
+    color: #333333;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #1B1B1B; 
+    color: #FFFFFF; 
+}
+
+/* Navigation Links */
+nav a {
+    color: #FFD700; 
+}
+
+nav a:hover {
+    color: #E50914; 
+}
+
+/* Buttons and Important Elements */
+button, .important-link {
+    background-color: #E50914; 
+    color: #FFFFFF; 
+}
+
+button:hover {
+    background-color: #FFD700; 
+}
+
+header {
+    background-color: #000; 
+    color: #fff; 
+    height: 160px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1.2em; 
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
